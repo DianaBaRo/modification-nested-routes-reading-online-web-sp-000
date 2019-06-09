@@ -21,7 +21,6 @@ class PostsController < ApplicationController
       redirect_to authors_path, alert: "Author not found."
     else
       @post = Post.new(author_id: params[:author_id])
-      redirect_to new_author_post_path
     end
   end
 
